@@ -1,0 +1,19 @@
+{
+  "name": "city-events",
+  "version": "1.0.0",
+  "description": "2312",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakimkhamis/city-events.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hakimkhamis/city-events/issues"
+  },
+  "homepage": "https://github.com/Hakimkhamis/city-events#readme"
+}
