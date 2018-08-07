@@ -1,5 +1,4 @@
 # city-events
-2312
 
 Event discovery platform “All Events in City” is a website where you can see the events in your city or any city that you are going to visit in specific dates 
 Through this website you can know the upcoming events such as You can display events by category like 
