@@ -21,3 +21,5 @@ also there will be a navbar for user to search for the events in any city
 -Enter date:...
 
 second page will be for blogs also can the bloggers post their blogs on the page.
+
+In the end of each page there will be a map which shows the user the near events in the city.
