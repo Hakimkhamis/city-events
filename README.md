@@ -26,3 +26,4 @@ In the end of each page there will be a map which shows the user the near events
 
 The thired page "Admin page" 
 the admin will be able add, delete edit postes 
+........................
