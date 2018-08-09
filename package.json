@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Hakimkhamis/city-events/issues"
   },
-  "homepage": "https://github.com/Hakimkhamis/city-events#readme"
+  "homepage": "https://github.com/Hakimkhamis/city-events#readme",
+  "dependencies": {
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.2.7"
+  }
 }
