@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/Hakimkhamis/city-events#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "mongodb": "^2.2.33",
+    "mongojs": "^2.6.0",
     "mongoose": "^5.2.7"
   }
 }
