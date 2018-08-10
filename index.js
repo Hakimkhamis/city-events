@@ -8,11 +8,11 @@ const router = express.Router();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-var db = mongojs('localhost:27017/event', ['event'])
+var db = mongojs('localhost:3000/event', ['event'])
 
 app.use(express.static(__dirname+'/public'));
 
-app.get('\contacts', function (req , res){
+app.get('\event', function (req , res){
     db.event.find(function (err, docs){
         res.json(docs)
 
