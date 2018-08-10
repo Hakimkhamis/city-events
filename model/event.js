@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var mongojs = require('mongojs');
+var Schema = mongojs.Schema;
 let EventTable = new Schema({
   eventId: Number,
   eventName: String

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="controller/getevent.js"></script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +37,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
-<body>
+<body ng-app="myApp">
 
 	<!-- Header -->
 	<header id="header" class="transparent-navbar">
@@ -265,18 +271,18 @@
 
 				<div class="col-md-8 col-md-offset-2">
 
-					<div class="events-wrapper">
+					<div class="events-wrapper" ng-controller="EventsController">
 						<!-- event -->
-						<div class="event">
+						<div class="event" ng-repeat="event in events">
 							<div class="event-day">
 								<div>
-									<span class="day">16</span>
+									<span class="date">{{event.date}}</span>
 									<span class="year">Aug, 2018</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Sarajevsko After Film Electronic Stage: Francois X</h3>
+								<p class="event-time"><i class="fa fa-clock-o"></i> {{event.time}}</p>
+								<h3 class="event-title">{{event.name}}</h3>
 								<p>During SARAJEVO FILM FESTIVAL (August 10-16th), in Centar Skenderija, two stages will be in charge of the music:
 									    <br>
 										•	Sarajevsko After Film Main Stage (in Dom mladih)
@@ -287,108 +293,6 @@
 						</div>
 						<!-- /event -->
 
-						<!-- event -->
-						<div class="event">
-							
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 11 : 00 AM - 12 : 00 AM</p>
-								<h3 class="event-title">Sarajevsko After Film Electronic Stage: Francois X</h3>
-								<p>During SARAJEVO FILM FESTIVAL (August 10-16th), in Centar Skenderija, two stages will be in charge of the music:
-									    <br>
-										•	Sarajevsko After Film Main Stage (in Dom mladih)
-										<br>
-										•	Sarajevsko After Film Electronic Stage (in the Amphitheater of Dom mladih).</p>
-								<p>By <a href="#">Francois X</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">24</span>
-									<span class="year">Aug, 2018</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 9: 30 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Sarajevo Open Air 2018 PG Accuracy, Open National Championship</h3>
-								<p>DRŽAVNO PRVENSTVO U PRECIZNOM SLIJETANJU
-										PARAGLAJDEROM NA CILJ.
-										<br>
-										Dragi piloti paraglajdera, Bosanci i Hercegovci, te komšije iz susjednih država…
-										<br>
-										S ponosom Vas obavještavamo da je Extreme Sport Club-u iz Sarajeva povjerena organizacija Državnog 
-										prvenstva u preciznom slijetanju paraglajderom na cilj koje će se održati 25.08 i 26.08.2018 u Babinom dolu na Bjelašnici.
-									</p>
-								<p>By <a href="#">ExtremeSport Sarajevo </a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 10 : 00 AM - 12 : 00 AM</p>
-								<h3 class="event-title">Creative Writing Roadtrip in Bosnia</h3>
-								<p>We invite you to join us on the Lazuli Trail, a creative writing roadtrip in this beautiful corner of the Balkans! <br>
-										Together with Sukina Douglas, spoken word poet and creative writing facilitator, we will explore not only the <br>
-										lush greenery, mountains and waterfalls that make this country so special, but also its recent turbulent past and<gr>
-										the lessons we can take home with us where many are facing a growing tide of nationalism and the illusions of  <br>
-										separateness in our own communities.
-
-								</p>
-								<p>By <a href="#"> Lazuli Ventures</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">31</span>
-									<span class="year">Aug, 2018</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Women Yoga retreat - Shakti circle</h3>
-								<p>Imagine the weekend in a beautiful forrest, with women just like YOU - who want to 
-									<br>dedicate their time to feel fully the essence of their feminine nature- to nurture, to
-									 <br>share journey together on awakening their true female power, the weekend in 
-									 <br>which we will connect, admire each other, support each other, and during this 
-									 <br>time we will do individual work as well as the work on connecting to each other 
-									 <br>as a woman to woman. 
-									<br>We will remember how it used to be when women were in sisterhood and how it 
-									<br>felt to have a company that uplifts you..</p>
-								<p>By <a href="#">Prana Yoga studio Sarajevo</a></p>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 00 AM - 11 : 00 AM</p>
-								<h3 class="event-title">Najbrži uz najbrže - Street sprint 50m!</h3>
-								<p>>Najbrži uz najbrže je projekat koji je koncipiran na ideji da se u sklopu jednodnevnog 
-									<br>eventa, na platou BBI Centra, organizuje takmičenje u sprintu na 50m i tako
-									 <br>pronađe najbrži/a u raznim kategorijama. </p>
-								<p>By <a href="#">AK Novi Grad Sarajevo - Atleta</a></p>
-							</div>
-						</div>
-						<!-- /event -->
 					</div>
 
 					<div class="download-btn">
@@ -671,17 +575,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 	<!-- /Footer -->
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/main.js"></script>
 
 </body>
+
+<script>
+		var app = angular.module('myApp', []);
+		app.controller('EventsController', EventsController);
+		</script>
 
 </html>
