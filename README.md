@@ -11,18 +11,14 @@ It will be near area growing event aggregation platform having such a huge reach
 
 The first page will include most of the page functionality
 There will be
-Home, About, Events, Contact, Blog, Search
+Home, About, Events, Contact, Search.
 events bar will include(Sports, music, parties, Art, Business, festivals)
 there will be a Navbar will be named: "Create Event" for the event promoter to promoter for their event's and the user will be able to see it 
 
-also there will be a navbar for user to search for the events in any city
+also there will be a navbar for user to search for the events by thir name
 -it will be “Search Event”
--Enter name if the city:.....
+-Enter name of the city:.....
 -Enter date:...
-
-second page will be for blogs also can the bloggers post their blogs on the page.
-
-In the end of each page there will be a map which shows the user the near events in the city.
 
 The thired page "Admin page" 
 the admin will be able add, delete edit postes 
