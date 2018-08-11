@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link type="text/css" rel="stylesheet" href="event/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="event/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.0/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js"></script>
+</head>
+
+<body ng-app="adminApp">
+    <div class="container">
+        <toaster-container></toaster-container>
+        <div class="row">
+            <div class="col-md-8">
+                <div ng-controller="submitController">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="event-name">Event name:</label>
+                                    <input type="text" class="form-control" ng-model="event.name" name="name" placeholder="Enter event name" id="event-name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date">Date:</label>
+                                    <input type="date" class="form-control" ng-model="event.date" name="date" id="date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="time">Time:</label>
+                                    <input type="time" class="form-control" ng-model="event.time" name="time" id="time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="location">Location:</label>
+                                    <input type="text" class="form-control" ng-model="event.location" name="location" placeholder="Enter location:" id="location">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="price">Price:</label>
+                                    <input type="number" class="form-control" ng-model="event.price" name="price" placeholder="Enter event price:" id="price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="poster">Poster:</label>
+                                    <input type="text" class="form-control" ng-model="event.poster" name="poster" placeholder="Enter poster link:" id="poster">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="description">Description:</label>
+                                    <textarea rows="10" class="form-control" ng-model="event.description" name="description" placeholder="Enter description:"
+                                        id="description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button ng-click="addEvent()" class="btn btn-success">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        angular.module('adminApp', ['toaster', 'ngAnimate'])
+            .controller('submitController', function ($scope, toaster, $http) {
+                $scope.event = {}
+                $scope.addEvent = function () {
+                    $http({
+                        method: "POST",
+                        url: "/events",
+                        data: $scope.event
+                    }).success(function(data) {
+                        toaster.pop('succes', "Success", "Event successfully submited.");
+                    }).fail(function(error) {
+                        toaster.pop('error', "Error", "Event failed to post.");
+                    })
+                };
+            });
+    </script>
+</body>
+
+</html>

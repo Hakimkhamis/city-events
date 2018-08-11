@@ -678,28 +678,8 @@ textarea.input {
   margin-top: 60px;
 }
 
-.event:after {
-  content: "";
-  position: absolute;
-  left: 60px;
-  top: 0px;
-  bottom: 0px;
-  width: 4px;
-  background-color: #dd0a37;
-}
-
 .event:last-child:after {
   height: 60px;
-}
-
-.event+.event:before {
-  content: "";
-  position: absolute;
-  left: 60px;
-  height: 60px;
-  top: -60px;
-  width: 4px;
-  background-color: #dd0a37;
 }
 
 .event .event-day {

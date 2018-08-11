@@ -20,6 +20,14 @@ app.get('/event', function (req , res){
         });
     });
 
+app.post("/events", function(req, res) {
+    db.events.save(req.body, function(error, records) {
+        if (error) {
+            res.status(400).send("Event was not added.")
+        }
+        res.send("Event succesfully added.");
+    });
+})
 
 // router.post('/event/createorupdate', (req, res) => {
 //     req.body._id = req.body._id || new mongojs.mongo.ObjectID();

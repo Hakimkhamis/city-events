@@ -4,8 +4,8 @@
 
 <head>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-		<script src="controller/getevent.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="controller/getevent.js"></script>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +18,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="event/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="event/css/style.css" />
 
 	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+	<link type="text/css" rel="stylesheet" href="event/css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="event/css/owl.theme.default.css" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="event/css/font-awesome.min.css">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,6 +37,7 @@
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
 </head>
+
 <body ng-app="myApp">
 
 	<!-- Header -->
@@ -48,16 +49,16 @@
 				<!-- Logo -->
 				<div class="navbar-brand">
 					<a class="logo" href="index.html">
-						<img class="logo-img" src="./img/logo.png" alt="logo">
-						<img class="logo-alt-img" src="./img/logo-alt.png" alt="logo">
+						<img class="logo-img" src="event/img/logo.png" alt="logo">
+						<img class="logo-alt-img" src="event/img/logo-alt.png" alt="logo">
 					</a>
 				</div>
 				<!-- /Logo -->
 
 				<!-- Mobile toggle -->
 				<button class="navbar-toggle">
-						<i class="fa fa-bars"></i>
-					</button>
+					<i class="fa fa-bars"></i>
+				</button>
 				<!-- /Mobile toggle -->
 			</div>
 			<!-- /navbar header -->
@@ -65,16 +66,30 @@
 			<!-- Navigation -->
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
-					
-					<li><input type="text" placeholder="city name..." style="margin-top: 25px"></li>
-					<li><button style="margin-top: 25px">Search</button></li>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#schedule">Events</a></li>
-					<li><a href="#speakers">Speakers</a></li>
-					<li><a href="#contact">Contact</a></li>
-					
-					
+
+					<li>
+						<input type="text" placeholder="city name..." style="margin-top: 25px">
+					</li>
+					<li>
+						<button style="margin-top: 25px">Search</button>
+					</li>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#schedule">Events</a>
+					</li>
+					<li>
+						<a href="#speakers">Speakers</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+
+
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -87,9 +102,9 @@
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(event/img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
-		
+
 
 		<!-- home wrapper -->
 		<div class="home-wrapper">
@@ -102,7 +117,7 @@
 						<div class="home-content">
 							<h1>Welcome to City Events</h1>
 							<h4 class="lead">Here you can see all up coming events by day, houre, place</h4>
-						
+
 						</div>
 					</div>
 					<!-- /home content -->
@@ -123,23 +138,24 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>About</span> <span style="color: #dd0a37;">Event</span></h3>
+					<h3 class="title">
+						<span>About</span>
+						<span style="color: #dd0a37;">Event</span>
+					</h3>
 				</div>
 				<!-- /section title -->
 
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>We’re small and diverse group on mission: to help people discover the events happening around them. 
-							Hundreds of events happens in our city, but its difficult to find them out. "City Events" helps you do that..!!
-
-							Uniquely harnessing the power of the social media,
-							 we have created a smarter way to discover and share information regarding events. 
-							 Started in 2018 with the sole purpose of making events discovery easier,
-							
-							World’s fastest growing event aggregation platform having such a huge reach has become a platform for event organizers to promote their events at City, Country and/or Global level.
-							 We are the connecting bridge 
-							between users who are looking for events and event promoters who are in search of their audience. There’s always a bigger picture. All facets of event marketing needs to be understood and we cover the gamut.</p>
+						<p>We’re small and diverse group on mission: to help people discover the events happening around them. Hundreds of events
+							happens in our city, but its difficult to find them out. "City Events" helps you do that..!! Uniquely harnessing the
+							power of the social media, we have created a smarter way to discover and share information regarding events. Started
+							in 2018 with the sole purpose of making events discovery easier, World’s fastest growing event aggregation platform
+							having such a huge reach has become a platform for event organizers to promote their events at City, Country and/or
+							Global level. We are the connecting bridge between users who are looking for events and event promoters who are in
+							search of their audience. There’s always a bigger picture. All facets of event marketing needs to be understood and
+							we cover the gamut.</p>
 					</div>
 					<!-- /about content -->
 
@@ -150,7 +166,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="900" data-speed="1200">0</span>+</h3>
+									<h3>
+										<span class="counter" data-from="0" data-to="900" data-speed="1200">0</span>+</h3>
 									<p>Hours</p>
 								</div>
 							</div>
@@ -159,7 +176,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="750" data-speed="1500">0</span>+</h3>
+									<h3>
+										<span class="counter" data-from="0" data-to="750" data-speed="1500">0</span>+</h3>
 									<p>Venues</p>
 								</div>
 							</div>
@@ -168,7 +186,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="50" data-speed="1500">0</span>+</h3>
+									<h3>
+										<span class="counter" data-from="0" data-to="50" data-speed="1500">0</span>+</h3>
 									<p>Country</p>
 								</div>
 							</div>
@@ -177,7 +196,8 @@
 							<!-- number -->
 							<div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="20" data-speed="1500">0</span>+</h3>
+									<h3>
+										<span class="counter" data-from="0" data-to="20" data-speed="1500">0</span>+</h3>
 									<p>Speakers</p>
 								</div>
 							</div>
@@ -204,19 +224,19 @@
 				<div id="galery-owl" class="owl-carousel owl-theme">
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/galery01.jpg" alt="">
+						<img src="event/img/galery01.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/galery02.jpg" alt="">
+						<img src="event/img/galery02.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/galery03.jpg" alt="">
+						<img src="event/img/galery03.jpg" alt="">
 					</div>
 					<!-- /galery item -->
 
@@ -232,7 +252,7 @@
 	<!-- Video CTA -->
 	<div id="video-cta" class="section">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(event/img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- container -->
@@ -258,45 +278,44 @@
 	<!-- /Video CTA -->
 
 	<!-- Event Schedule -->
-	<div id="schedule" class="section">
+	<div id="schedule" class="section" style="background-image:url(event/img/background03.jpg)">
 		<!-- container -->
-		<div class="container">
+		<div class="container"  >
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Up coming Event</span> <span style="color: #dd0a37;">Schedule</span></h3>
+					<h3 class="title">
+						<span>Up coming Event</span>
+						<span style="color: #dd0a37;">Schedule</span>
+					</h3>
 				</div>
 				<!-- /section title -->
 
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-12">
 
 					<div class="events-wrapper" ng-controller="EventsController">
+						<div class="row">
 						<!-- event -->
-						<div class="event" ng-repeat="event in events">
-							<div class="event-day">
-								<div>
-									<span class="date">{{event.date}}</span>
-									<span class="year">Aug, 2018</span>
+							<div class="event" ng-repeat="event in events">
+									<div class="col-md-4">
+										<div style="border: 1px solid red;" class="card">
+											<img class="card-img-top" style="width: 200px; height: 200px;" ng-src="{{ event.poster }}" alt="Event">
+											<div class="card-body">
+												<h5 class="card-title"> {{ event.name }} </h5>
+												<p class="card-text"> {{ event.description }} </p>
+											</div>
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">{{ event.date }}</li>
+												<li class="list-group-item">{{ event.time }}</li>
+												<li class="list-group-item">{{ event.location }}</li>
+												<li class="list-group-item">{{ event.price }}</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> {{event.time}}</p>
-								<h3 class="event-title">{{event.name}}</h3>
-								<p>During SARAJEVO FILM FESTIVAL (August 10-16th), in Centar Skenderija, two stages will be in charge of the music:
-									    <br>
-										•	Sarajevsko After Film Main Stage (in Dom mladih)
-										<br>
-										•	Sarajevsko After Film Electronic Stage (in the Amphitheater of Dom mladih).</p>
-								<p>By <a href="#">Francois X</a></p>
-							</div>
 						</div>
-						<!-- /event -->
-
-					</div>
-
-					
-
 				</div>
 			</div>
 			<!-- /row -->
@@ -313,7 +332,10 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Our</span> <span style="color: #dd0a37;">Speakers</span></h3>
+					<h3 class="title">
+						<span>Our</span>
+						<span style="color: #dd0a37;">Speakers</span>
+					</h3>
 				</div>
 				<!-- section title -->
 
@@ -321,14 +343,22 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker01.jpg" alt="">
+							<img src="event/img/speaker01.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa fa-linkedin"></i>
+								</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Drew Philp</h2>
@@ -343,14 +373,22 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker02.jpg" alt="">
+							<img src="event/img/speaker02.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa fa-linkedin"></i>
+								</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Julian Treasure</h2>
@@ -365,14 +403,22 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
-							<img src="./img/speaker03.jpg" alt="">
+							<img src="event/img/speaker03.jpg" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa fa-linkedin"></i></a>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa fa-linkedin"></i>
+								</a>
 							</div>
 							<div class="speaker-content">
 								<h2>Oskar Eustis</h2>
@@ -392,7 +438,7 @@
 								<div class="row">
 									<div class="col-md-5">
 										<div class="speaker-modal-img">
-											<img src="./img/speaker-info.jpg" alt="">
+											<img src="event/img/speaker-info.jpg" alt="">
 										</div>
 									</div>
 									<div class="col-md-7">
@@ -409,21 +455,31 @@
 
 											<div class="speaker-social">
 												<h4>Social Profile</h4>
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-instagram"></i></a>
-												<a href="#"><i class="fa fa fa-linkedin"></i></a>
+												<a href="#">
+													<i class="fa fa-facebook"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-twitter"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa-instagram"></i>
+												</a>
+												<a href="#">
+													<i class="fa fa fa-linkedin"></i>
+												</a>
 											</div>
 
 											<div class="speaker-events">
 												<h4>Sessions</h4>
 												<div class="speaker-event">
-													<span><strong>Day 1 -</strong> september 2, 2018 8 : 00 AM - 11 : 00 AM</span>
+													<span>
+														<strong>Day 1 -</strong> september 2, 2018 8 : 00 AM - 11 : 00 AM</span>
 													<p></p>
 												</div>
 
 												<div class="speaker-event">
-													<span><strong>Day 2 -</strong> september 20, 2018 8 : 00 AM - 11 : 00 AM</span>
+													<span>
+														<strong>Day 2 -</strong> september 20, 2018 8 : 00 AM - 11 : 00 AM</span>
 													<p></p>
 												</div>
 											</div>
@@ -443,19 +499,19 @@
 	</div>
 	<!-- /Speakers -->
 
-	
 
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
+
 	</div>
-	
+	<!-- /row -->
+	</div>
+	<!-- /container -->
+	</div>
+
 
 	<!-- CTA -->
 	<div id="cta" class="section">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background03.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(event/img/background03.jpg)" data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- container -->
@@ -486,7 +542,10 @@
 			<div class="row">
 				<!-- section title -->
 				<div class="section-title">
-					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
+					<h3 class="title">
+						<span>Contact</span>
+						<span style="color: #dd0a37;">Info</span>
+					</h3>
 				</div>
 				<!-- /section title -->
 
@@ -520,63 +579,80 @@
 			</div>
 			<!-- /row -->
 		</div>
-		
 
-		
-	
-	<!-- /Contact -->
 
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
 
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/logo.png" alt="logo">
-						</a>
+
+		<!-- /Contact -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<!-- footer logo -->
+					<div class="col-md-4 col-md-push-4">
+						<div class="footer-brand">
+							<a class="logo" href="index.html">
+								<img class="logo-img" src="event/img/logo.png" alt="logo">
+							</a>
+						</div>
 					</div>
-				</div>
-				<!-- /footer logo -->
+					<!-- /footer logo -->
 
-				<!-- contact social -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa fa-linkedin"></i></a>
+					<!-- contact social -->
+					<div class="col-md-4 col-md-push-4">
+						<div class="contact-social">
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-google-plus"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa-pinterest"></i>
+							</a>
+							<a href="#">
+								<i class="fa fa fa-linkedin"></i>
+							</a>
+						</div>
 					</div>
-				</div>
-				<!-- /contact social -->
+					<!-- /contact social -->
 
-				<!-- copyright -->
-				<div class="col-md-4 col-md-pull-8">
-					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<!-- /copyright -->
+					<!-- copyright -->
+					<div class="col-md-4 col-md-pull-8">
+						<span class="copyright">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+							<i class="fa fa-heart-o" aria-hidden="true"></i> by
+							<a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</span>
+					</div>
+					<!-- /copyright -->
 
+				</div>
+				<!-- /row -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
+			<!-- /container -->
+		</footer>
+		<!-- /Footer -->
 
 
 </body>
 
 <script>
-		var app = angular.module('myApp', []);
-		app.controller('EventsController', EventsController);
-		</script>
+	var app = angular.module('myApp', []);
+	app.controller('EventsController', EventsController);
+</script>
 
 </html>
