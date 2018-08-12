@@ -24,10 +24,13 @@
 	<!-- Owl Carousel -->
 	<link type="text/css" rel="stylesheet" href="event/css/owl.carousel.css" />
 	<link type="text/css" rel="stylesheet" href="event/css/owl.theme.default.css" />
+	<link href="event/css/angular-carousel.min.css" rel="stylesheet" type="text/css" />
+
+	
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="event/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<!-- Custom stlylesheet -->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -88,7 +91,9 @@
 					<li>
 						<a href="#contact">Contact</a>
 					</li>
-
+					<li>
+						<a href="login.html">Register/Log in</a>
+					</li>
 
 				</ul>
 			</nav>
@@ -251,36 +256,36 @@
 
 	<!-- Video CTA -->
 	<div id="video-cta" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(event/img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<a class="video-play" href="#">
-							<i class="fa fa-play"></i>
-						</a>
-						<h2>Watch this video</h2>
-						<p class="lead"></p>
+			<!-- background image -->
+			<div class="section-bg" style="background-image:url(event/img/background02.jpg)" data-stellar-background-ratio="0.5"></div>
+			<!-- /background image -->
+	
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- cta content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="cta-content text-center">
+							<a class="video-play" href="#">
+								<i class="fa fa-play"></i>
+							</a>
+							<h2>Watch this video</h2>
+							<p class="lead"></p>
+						</div>
 					</div>
+					<!-- /cta content -->
 				</div>
-				<!-- /cta content -->
+				<!-- /row -->
 			</div>
-			<!-- /row -->
+			<!-- /container -->
 		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Video CTA -->
+		<!-- /Video CTA --> -->
 
 	<!-- Event Schedule -->
 	<div id="schedule" class="section" style="background-image:url(event/img/background03.jpg)">
 		<!-- container -->
-		<div class="container"  >
+		<div class="container">
 			<!-- row -->
 			<div class="row">
 				<!-- section title -->
@@ -296,26 +301,26 @@
 
 					<div class="events-wrapper" ng-controller="EventsController">
 						<div class="row">
-						<!-- event -->
+							<!-- event -->
 							<div class="event" ng-repeat="event in events">
-									<div class="col-md-4">
-										<div class="card">
-											<img class="card-img-top" style="width: 200px; height: 200px;" ng-src="{{ event.poster }}" alt="Event">
-											<div class="card-body">
-												<h5 style="color: white" class="card-title"> {{ event.name }} </h5>
-												<p style="color: gainsboro" class="card-text"> {{ event.description }} </p>
-											</div>
-											<ul class="list-group list-group-flush">
-												<li class="list-group-item">{{ event.date }}</li>
-												<li class="list-group-item">{{ event.time }}</li>
-												<li class="list-group-item">{{ event.location }}</li>
-												<li class="list-group-item">{{ event.price }}</li>
-											</ul>
+								<div class="col-md-4">
+									<div class="card">
+										<img class="card-img-top" style="width: 200px; height: 200px;" ng-src="{{ event.poster }}" alt="Event">
+										<div class="card-body">
+											<h5 style="color: white" class="card-title"> {{ event.name }} </h5>
+											<p style="color: gainsboro" class="card-text"> {{ event.description }} </p>
 										</div>
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item">{{ event.date }}</li>
+											<li class="list-group-item">{{ event.time }}</li>
+											<li class="list-group-item">{{ event.location }}</li>
+											<li class="list-group-item">{{ event.price }}</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 			<!-- /row -->
@@ -340,7 +345,7 @@
 				<!-- section title -->
 
 				<!-- speaker -->
-		<!--		<div class="col-md-4 col-sm-6">
+				<!--		<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
 							<img src="event/img/speaker01.jpg" alt="">
@@ -370,7 +375,7 @@
 				<!-- /speaker -->
 
 				<!-- speaker -->
-			<!--	<div class="col-md-4 col-sm-6">
+				<!--	<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
 							<img src="event/img/speaker02.jpg" alt="">
@@ -400,7 +405,7 @@
 				<!-- /speaker -->
 
 				<!-- speaker -->
-			<!--	<div class="col-md-4 col-sm-6">
+				<!--	<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal" data-target="#speaker-modal-1">
 						<div class="speaker-img">
 							<img src="event/img/speaker03.jpg" alt="">
@@ -430,7 +435,7 @@
 				<!-- /speaker -->
 
 				<!-- speaker modal -->
-			<!--	<div id="speaker-modal-1" class="speaker-modal modal fade">
+				<!--	<div id="speaker-modal-1" class="speaker-modal modal fade">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<button type="button" class="speaker-modal-close" data-dismiss="modal"></button>

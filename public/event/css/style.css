@@ -152,7 +152,6 @@ textarea.input {
   text-transform: capitalize;
   font-weight: 900;
   font-size: 42px;
-  overflow: hidden;
 }
 
 .section-title .title>span {
@@ -666,9 +665,11 @@ textarea.input {
   color: #dd0a37;
 }
 
-/*=========================================================
+
+/*
+=========================================================
 	EVENTS
-===========================================================*/
+===========================================================
 
 .event {
   position: relative;
@@ -754,26 +755,7 @@ textarea.input {
   margin-top: 60px;
   text-align: center;
 }
-
-/*=========================================================
-	SPONSORS
-===========================================================*/
-
-.sponsor {
-  display: block;
-  opacity: 0.5;
-  margin-bottom: 30px;
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-}
-
-.sponsor:hover {
-  opacity: 1;
-}
-
-.sponsor>img {
-  width: 100%;
-}
+*/
 
 /*=========================================================
 	CONTACT
