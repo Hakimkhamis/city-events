@@ -29,6 +29,18 @@ app.post("/events", function(req, res) {
     });
 })
 
+app.get('/users', function (req , res){
+    db.users.find(function (err, docs){
+        res.json(docs)
+
+        });
+    });
+app.post('/users', function(req,res){
+    db.users.insert(req.body,function(err,docs){
+        res.send();
+    })
+})
+
 // router.post('/event/createorupdate', (req, res) => {
 //     req.body._id = req.body._id || new mongojs.mongo.ObjectID();
 //     EventTable.findOneAndUpdate({_id: req.body._id}, req.body, {new: true, upsert: true}, (err, data) => {
