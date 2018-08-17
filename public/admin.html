@@ -15,11 +15,11 @@
 </head>
 
 <body ng-app="adminApp">
-    <div class="container">
+    <div ng-controller="submitController" class="container">
         <toaster-container></toaster-container>
         <div class="row">
             <div class="col-md-8">
-                <div ng-controller="submitController">
+                <div>
                     <form>
                         <div class="row">
                             <div class="col-md-12">
@@ -75,26 +75,39 @@
                             </div>
                         </div>
                         <button ng-click="addEvent()" class="btn btn-success">Submit</button>
+                        <button ng-click="logOut()" type="button" class="btn btn-danger">Log out</button>
                 </div>
                 </form>
             </div>
         </div>
     </div>
     <script>
+        if (localStorage.getItem("user") == undefined) {
+            window.location.href = "index.html";
+        } 
+
         angular.module('adminApp', ['toaster', 'ngAnimate'])
             .controller('submitController', function ($scope, toaster, $http) {
                 $scope.event = {}
-                $scope.addEvent = function () {
-                    $http({
-                        method: "POST",
-                        url: "/events",
-                        data: $scope.event
-                    }).success(function(data) {
-                        toaster.pop('succes', "Success", "Event successfully submited.");
-                    }).fail(function(error) {
-                        toaster.pop('error', "Error", "Event failed to post.");
-                    })
+                var config = {
+                    headers: {
+                        "JWT-AUTH": localStorage.getItem("user")
+                    }
                 };
+                $scope.addEvent = function () {
+                    $http.post("/events", $scope.event, config).then(
+                        function(response) {
+                            toaster.pop('succes', "Success", "Event successfully submited.");
+                        },
+                        function(error) {
+                            toaster.pop('error', "Error", "Event failed to post.");
+                        }
+                    );
+                };
+                $scope.logOut = function() {
+                    localStorage.clear();
+                    window.location.href = "."
+                }
             });
     </script>
 </body>

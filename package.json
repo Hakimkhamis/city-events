@@ -26,6 +26,7 @@
     "angular-popeye": "^1.0.5",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "mongodb": "^2.2.33",
     "mongojs": "^2.6.0",
     "mongoose": "^5.2.7",
