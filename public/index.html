@@ -6,6 +6,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="controller/getevent.js"></script>
+	<script src="controller/LoginController.js"></script>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,14 +68,14 @@
 			<!-- /navbar header -->
 
 			<!-- Navigation -->
-			<nav id="nav">
+			<nav ng-controller="LoginController" id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
 
 					<li>
-						<input type="text" placeholder="city name..." style="margin-top: 25px">
+						<input class="form-control" type="text" placeholder="city name..." style="margin-top: 25px">
 					</li>
 					<li>
-						<button style="margin-top: 25px">Search</button>
+						<button class="btn btn-info" style="margin-top: 25px" >Search</button>
 					</li>
 					<li>
 						<a href="#home">Home</a>
@@ -85,18 +86,16 @@
 					<li>
 						<a href="#schedule">Events</a>
 					</li>
-					<li>
-						<a href="#speakers">Speakers</a>
-					</li>
+					
 					<li>
 						<a href="#contact">Contact</a>
 					</li>
 					<li>
-						<a href="login.html">Log in</a>
+						<a ng-click="openLogin()">Log in</a>
 					</li>
 					
 					<li>
-						<a href="register.html">Register</a>
+						<a ng-click="openRegistration()">Register</a>
 					</li>
 
 				</ul>
@@ -658,10 +657,12 @@
 
 
 </body>
-
+<link rel="stylesheet" href="event/release/popeye.min.css">
+<script src="event/release/popeye.min.js"></script>
 <script>
-	var app = angular.module('myApp', []);
+	var app = angular.module('myApp', ["pathgather.popeye"]);
 	app.controller('EventsController', EventsController);
+	app.controller("LoginController", LoginController);
 </script>
 
 </html>
