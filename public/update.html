@@ -1,0 +1,58 @@
+
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="event-name">Event name:</label>
+                        <input type="text" class="form-control" ng-model="event.name" name="name" placeholder="Enter event name" id="event-name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" ng-model="event.date" name="date" id="date">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" ng-model="event.time" name="time" id="time">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <input type="text" class="form-control" ng-model="event.location" name="location" placeholder="Enter location:" id="location">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" class="form-control" ng-model="event.price" name="price" placeholder="Enter event price:" id="price">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="poster">Poster:</label>
+                        <input type="text" class="form-control" ng-model="event.poster" name="poster" placeholder="Enter poster link:" id="poster">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea rows="10" class="form-control" ng-model="event.description" name="description" placeholder="Enter description:"
+                            id="description"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button ng-click="addEvent()" class="btn btn-success">Submit</button>
+            <button ng-click="logOut()" type="button" class="btn btn-danger">Log out</button>
+        </form>

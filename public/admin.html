@@ -97,7 +97,7 @@
                 $scope.addEvent = function () {
                     $http.post("/events", $scope.event, config).then(
                         function(response) {
-                            toaster.pop('succes', "Success", "Event successfully submited.");
+                            toaster.pop('success', "Success", "Event successfully submited.");
                         },
                         function(error) {
                             toaster.pop('error', "Error", "Event failed to post.");

@@ -77,6 +77,26 @@ app.post("/events", function(req, res) {
     });
 })
 
+app.delete("/event/:id", function(req, res) {
+    db.events.remove({"_id": ObjectId(req.params.id)}, function(error, result) {
+        if (error) {
+            res.status(400).send("Event could not be deleted.");
+        } else {
+            res.send("Event successfully deleted.");
+        }
+    })
+})
+
+app.get("/event/:id", function(req, res) {
+    db.events.findOne({"_id": ObjectId(req.params.id)}, function(error, result) {
+        if (error) {
+            res.status(400).send("Event could not be deleted.");
+        } else {
+            res.json(result);
+        }
+    })
+})
+
 app.get('/users', function (req , res){
     db.users.find(function (err, docs){
         res.json(docs)
