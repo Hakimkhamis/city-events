@@ -8,7 +8,7 @@ app.use(express.static('event'))
  const bodyParser = require('body-parser');
 // var EventTable = require('./model/event');
 // const router = express.Router();
-
+var port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 var db = mongojs('localhost:27017/event', ['events'])
@@ -123,4 +123,4 @@ app.post('/users', function(req,res){
 //     });});
   
 // app.use('/api', router);
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, () => console.log('Example app listening on port '+port));
